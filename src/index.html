@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>EASV SASS</title>
+
+
+
+   
+
+</head>
+<body>
+
+    <!-- Nav START -->
+    
+    <nav class="navbar navbar-expand-lg bg-info-subtle sticky-top" id="home">
+        <div class="container">
+            <a class="navbar-brand agbalumo" href="#">
+                <img class="px-1 d-none d-md-inline" src="img/EASYDVEST.png" width="200" height="50"alt=""> 
+                <img class="px-2" src="img/Bootstrap_logo.svg.png" width="75" height="50" alt="">Bootstrap Bootcamp</a>
+
+            <button class="navbar-toggler"
+             type="button"
+             data-bs-toggle="collapse"
+             data-bs-target="#navmenu" 
+             aria-controls="navbarSupportedContent" 
+             aria-expanded="false" 
+             aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item d-flex align-items-center pe-3">
+                  <i class="fa-solid fa-bars-progress"></i>
+                    <a class="nav-link active agbalumo" aria-current="page" href="#learn">Programs</a>
+                </li>
+                <li class="nav-item d-flex align-items-center pe-3">
+                  <i class="fa-solid fa-person-chalkboard "></i>
+                    <a class="nav-link active agbalumo" aria-current="page" href="#instructors">Instructors</a>
+                </li>
+                <li class="nav-item d-flex align-items-center pe-3">
+                  <i class="fa-solid fa-circle-question"></i>
+                  <a class="nav-link active agbalumo" aria-current="page" href="#faq">Questions</a>
+              </li>
+                <li class="nav-item d-flex align-items-center pe-3">
+                  <i class="fa-solid fa-phone"></i>
+                  <a class="nav-link active agbalumo" aria-current="page" href="#contact">Contact us</a>
+              </li>
+              <li class="nav-item d-flex align-items-center pe-3">
+                <i class="fa-solid fa-address-book"></i>
+                <a class="nav-link active agbalumo" aria-current="page" href="#login" data-bs-toggle="modal" data-bs-target="#login">Log In</a>
+            </li>
+        
+            </ul>
+        </div>
+
+        </div>
+      </nav>
+
+      <!-- Nav END -->
+
+
+    <!-- Showcase START -->
+    
+      <div class="container-fluid bg-info pt-5">
+        <div class="text-center">
+            <img class="d-md-none mb-4" src="img/EASYDVEST.png" width="200" height="50" alt="">
+        </div>
+        <div class="container bg-info d-flex justify-content-between align-items-center">
+            <div>
+                <div class="text-center text-sm-start">
+                    <h1>Become a Web Developer</h1>
+                </div>
+                <p>We focus on teaching our students the fundamentals of the latest and greatest technologies to prepare them for their first dev role</p>
+                <div class="text-center text-sm-start">
+                    <button class="btn btn-primary rounded-5 px-5 my-3" data-bs-toggle="modal" data-bs-target="#enroll">Enroll NOW</button>
+                </div>
+            </div>
+            <img class="w-50 d-none d-md-block" src="img/showcase.svg" alt="">
+        </div>
+        
+      </div>
+
+
+      <!-- Modal -->
+<div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enroll" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-primary-subtle">
+        <h5 class="modal-title" id="enroll">Enroll NOW</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg-primary-subtle">
+        <p>Fill out the form and we will get to you!</p>
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Your full name</label>
+            <input type="text" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Your phone number</label>
+            <input type="text" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">I agree with terms and conditions stated by GDPR commission </label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Modal END -->
+
+<!-- Modal Login START -->
+
+
+<div class="modal fade" id="login" tabindex="-1"  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-primary-subtle">
+        <h5 class="modal-title" id="login">Log In</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg-primary-subtle">
+        <p>Please enter your login credentials:</p>
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Username or email address:</label>
+            <input placeholder="Username or email address:" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Your password</label>
+            <input placeholder="Enter your password:" type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">I agree with terms and conditions stated by GDPR commission </label>
+          </div>
+          <button type="submit" class="btn btn-primary ">Log In</button>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Modal login END  -->
+
+
+
+
+
+
+<!-- Showcase END -->
+    
+
+<!-- Newsletter START -->
+
+    <div class="container-fluid bg-primary  py-4">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-sm-12 col-md-6">
+                    <h1 class="text-light">Subscribe to our Newsletter</h1>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Type your email address:" />
+                        <button type="button" class="btn btn-dark">Subscribe</button>
+                    </div>
+                </div>
+                <div class="col-2 d-sm-none d-md-block">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Newsletter END -->
+
+
+
+
+<!-- Cards START -->
+<div class="container-fluid bg-info-subtle">
+  <div class="container">
+    <div class="row">
+
+        <div class="col-12 col-md-4  d-flex justify-content-center">
+            <div class="card bg-info my-5" style="width: 18rem;">
+                <img class="card-img-top" src="img/virtual2.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Virtual</h5>
+                  <p class="card-text">Try our revolutionary remote learning platform and join millions of other students!</p>
+                  <div class="text-center pt-3"><a href="#" class="btn btn-primary">Read more</a></div>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-12 col-md-4  d-flex justify-content-center">
+            <div class="card bg-info my-5" style="width: 18rem;">
+                <img class="card-img-top" src="img/Hybrid.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Hybrid</h5>
+                  <p class="card-text">Looking for the perfect balance between physical classes and remote classes?</p>
+                  <div class="text-center pt-3"><a href="#" class="btn btn-primary">Read more</a></div>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-12 col-md-4  d-flex justify-content-center">
+            <div class="card bg-info my-5" style="width: 18rem;">
+                <img class="card-img-top" src="img/inperson.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-center ">In Person</h5>
+                  <p class="card-text">We have also physical classes starting every month! Make sure you book a place!</p>
+                  <div class="text-center pt-3"><a href="#" class="btn btn-primary">Read more</a></div>
+                </div>
+              </div>
+        </div>
+        
+       
+
+        
+    </div>
+</div>
+</div>
+
+
+<!-- Cards END -->
+
+
+
+<!-- HTML/CSS/Bootstrap START -->
+<div class="container-fluid bg-info-subtle py-5">
+  <div class="container py-3" id="learn">
+    <div class="row">
+        <div class="col-12 col-xxl-6 d-flex align-items-center justify-content-start">
+            <img class="d-none d-xxl-block" src="img/fundamentals.svg" width="500" height="600" alt="">
+        </div>
+
+        <div class="col-12 col-xxl-6 mt-5">
+            <h1>Learn The Fundamentals</h1>
+            <h2 class="pb-3">Start your journey</h2>
+            <p>Elevate your web design and development skills with the fundamental building blocks of the digital world:
+                HTML and CSS. HTML provides the structure and content, while CSS adds the style and visual flair.
+                Whether you’re a novice embarking on your web journey or a seasoned pro looking to reinforce your
+                foundation, understanding HTML and CSS is essential.</p>
+            <p>Understanding HTML and CSS is not merely a technical skill, it's the art of digital expression. It's the
+                power to craft elegant, user-friendly interfaces and deliver a seamless user experience. From responsive
+                designs that adapt to various devices to the creation of stunning visual aesthetics, HTML and CSS are
+                the essential tools in your web development arsenal.</p>
+            <p>Whether you're a novice taking your first steps into the enchanting world of web design or a seasoned
+                professional seeking to fortify your skillset, the significance of HTML and CSS cannot be overstated.
+                They are your allies in crafting websites that leave a lasting impression, making your mark in the
+                digital landscape.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-xxl-6">
+            <h1>Learn Bootstrap</h1>
+            <h2 class="pb-3">Boost your career</h2>
+            <p>Unlock the world of modern web development with React, the industry-leading JavaScript library. Whether you’re a seasoned developer looking to stay at the forefront of technology or a beginner eager to dive into the world of web applications, React is your gateway to building fast, interactive, and engaging user interfaces.</p>
+            <p>React is the gateway to modern web development, offering the tools and best practices you need to create highly interactive, performant, and engaging user interfaces. Whether you're a seasoned developer or just starting your web development journey, React is a valuable skill to acquire.</p>
+            <p>Whether you're building a simple website or a complex web application, React provides the foundation you need to create a remarkable user experience. Its flexibility, efficiency, and strong developer community make it a top choice for modern web development. So, don't miss the opportunity to explore and harness the power of React for your next project.</p>
+        </div>
+        <div class="col d-flex align-items-center justify-content-end">
+            <img class="d-none d-xxl-block" src="img/Bootstrap_logo.svg.png" width="500" height="400" alt="">
+        </div>
+    </div>
+</div>
+
+</div>
+<!-- HTML/CSS/Bootstrap END -->
+
+
+
+
+
+
+
+<!-- Instructors START -->
+
+<div class="container-fluid bg-info py-5" id="instructors">
+    
+    <div class="container py-5">
+        <div class="text-center"><h1>Our certified instructors</h1></div>
+        <div class="row pt-5">
+            <div class="col-lg col-md-12 d-flex justify-content-center">
+                <div class="card bg-info-subtle shadow-lg mb-2" style="width: 18rem;">
+                <img class="card-img-top" src="img/Kristian.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Kristian Wittrup Nielsen</h5>
+                  <p class="card-text text-justify">Assistant professor at Erhvervs Akademi Sydvest, has completed the Master's degree in IT, Interaction Design and Multimedia at the University of Southern Denmark.</p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-lg col-md-12 d-flex justify-content-center">
+                <div class="card bg-info-subtle shadow-lg mb-2" style="width: 18rem;">
+                <img class="card-img-top" src="img/kim.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Kim Thøisen</h5>
+                  <p class="card-text">As a teacher in the graphic/creative field as well as development, I am time and time again motivated to find the latest trends and technologies.</p>
+                  
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg col-md-12 d-flex justify-content-center">
+                <div class="card bg-info-subtle shadow-lg mb-2" style="width: 18rem;">
+                <img class="card-img-top" src="img/thomas.jpeg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Thomas Boulund Hansen</h5>
+                  <p class="card-text">Skilled in Dependency Injection, PHP, jQuery, Windows Communication Foundation (WCF), and .NET Framework. Strong engineering professional with a PBA focused in Software Development.</p>
+                  
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+
+<!-- Instructors END -->
+
+
+<!-- FAQ START -->
+<div class="container-fluid bg-info-subtle py-3">
+  <div class="container py-5 bg-info-subtle" id="faq">
+    <div class="text-center pb-3"><h1> <br>Frequently Asked Questions</h1></div>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Where exactly are you located?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body bg-info-subtle">Our virtual office is based in the cloud, which means it exists online rather than at a physical location. This setup allows us to provide our services efficiently and securely, with the flexibility to connect with clients and users from all around the world. Rest assured, our virtual office is accessible 24/7, ensuring seamless communication and support.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                How much does it cost to attend?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body bg-info-subtle">The cost of attendance may vary depending on the specific event, program, or service you are interested in. To get detailed pricing information, please visit our Pricing page on our website or contact our customer support team. We offer various pricing options to accommodate different needs, and our representatives will be happy to assist you in finding the most suitable plan for your requirements.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                What do I need to know?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body bg-info-subtle">The information you need to know can vary greatly depending on the context or the subject matter. To provide you with the most accurate and relevant information, it would be helpful if you could specify the topic or area of interest. Once you provide more details, we can offer you specific guidance and resources to ensure you have the knowledge you need. Feel free to ask a more specific question, and we'll be happy to assist you further.</div>
+          </div>
+          
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                How do I sign up?
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body bg-info-subtle">Look for the "Sign Up" or "Register" button, usually located at the top right corner of the homepage.
+                Click on the button, and you'll be directed to the registration page.
+                Fill in the required information, including your name, email address, and a secure password.
+                Follow any additional instructions provided on the registration page.
+                Review our Terms and Conditions and Privacy Policy, if applicable, and accept them.
+                Click the "Submit" or "Sign Up" button to create your account.
+                You'll receive a confirmation email with further instructions. Follow the link in the email to verify your account.
+                Congratulations, you're now signed up and ready to use our services!
+                If you encounter any issues during the registration process, please don't hesitate to reach out to our customer support team, and they will be happy to assist you.</div>
+            </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseThree">
+            Do you help me find a job?
+          </button>
+        </h2>
+        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body bg-info-subtle">For personalized job placement assistance, you may want to consider reaching out to local employment agencies or job placement services, which specialize in connecting individuals with job opportunities.</div>
+        </div>
+</div>
+</div>
+
+
+
+<!-- FAQ END  -->
+
+
+
+<!-- CONTACT START -->
+        <div class="container" id="contact">
+
+          <div class="text-center my-5">
+            <h1>Contact Us</h1>
+            <br>
+            <div class="row">
+              <div class="col-6 mx-auto text-start">
+
+          
+
+            <p class="fs-4"><span class="fw-bold border-bottom border-white">Main Location: 
+            </span> <span class="border-bottom border-white">Spangsbjerg Kirkevej 103, 6700 Esbjerg</span></p>
+
+            <p class="fs-4"><span class="fw-bold border-bottom border-white">Enrolment Phone: 
+            </span> <span class="border-bottom border-white">+45 76 13 32 00</span></p>
+
+            <p class="fs-4"><span class="fw-bold border-bottom border-white">Student Phone: 
+            </span> <span class="border-bottom border-white">+45 4177 5717</span></p>
+
+            <p class="fs-4"><span class="fw-bold border-bottom border-white">Enrolment email: 
+            </span> <span class="border-bottom border-white">marketing@easv.dk</span></p>
+
+            <p class="fs-4"><span class="fw-bold border-bottom border-white">Student email: 
+            </span> <span class="border-bottom border-white">student@easv.dk</span></p>
+
+
+
+
+              </div>
+            </div>
+
+
+
+            
+            
+            
+          </div>
+
+        </div>
+<!-- CONTACT END -->
+
+
+
+<!-- Footer START -->
+
+<div class="container-fluid">
+  <div class="text-end">
+     <!-- <a class="fa-solid fa-home fs-2" href="#">  up  </a> -->
+  </div>
+  <div class="text-center pb-3">
+    <h6><img src="img/EASYDVEST.png" width="100" alt="">Copyrigth &copy; Erhvervsakademi Sydvest Esbjerg 2023</h6>
+  </div>
+  
+</div>
+
+
+<!-- Footer END -->
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+
+
+
+
+</body>
+</html>
