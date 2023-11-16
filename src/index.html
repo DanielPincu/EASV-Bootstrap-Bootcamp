@@ -182,24 +182,24 @@
 
 <!-- Newsletter START -->
 
-    <div class="container-fluid bg-primary  py-3">
-        <div class="container">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-sm-12 col-md-6">
-                    <h1 class="text-light">Subscribe to our Newsletter</h1>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Type your email address:" />
-                        <button type="button" class="btn btn-dark">Subscribe</button>
-                    </div>
-                </div>
-                <div class="col-2 d-sm-none d-md-block">
-                    
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="container-fluid bg-primary py-3">
+  <div class="container">
+      <div class="row justify-content-between align-items-center">
+          <div class="col-sm-12 col-md-6">
+              <h1 class="text-light">Subscribe to our Newsletter</h1>
+          </div>
+          <div class="col-sm-12 col-md-6">
+              <div class="input-group">
+                  <input type="email" class="form-control" id="emailInput" placeholder="Type your email address:" required/>
+                  <button type="button" class="btn btn-dark" onclick="subscribeNewsletter()">Subscribe</button>
+              </div>
+          </div>
+          <div class="col-2 d-sm-none d-md-block">
+              
+          </div>
+      </div>
+  </div>
+</div>
 
 <!-- Newsletter END -->
 
